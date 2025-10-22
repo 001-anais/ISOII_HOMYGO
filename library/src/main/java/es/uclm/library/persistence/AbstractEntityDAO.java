@@ -1,6 +1,6 @@
 package es.uclm.library.persistence;
 
-import es.*;
+
 
 public abstract class AbstractEntityDAO {
 
