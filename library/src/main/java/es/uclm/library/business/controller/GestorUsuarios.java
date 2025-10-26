@@ -36,7 +36,7 @@ public class GestorUsuarios {
         }
 
         listaUsuarios.add(usuario);
-        System.out.println("✅ Usuario registrado: " + usuario.getLogin());
+        System.out.println("Usuario registrado: " + usuario.getLogin());
     }
 
     /**
@@ -45,11 +45,11 @@ public class GestorUsuarios {
     public boolean validarLogin(String login, String pass) {
         for (Usuario u : listaUsuarios) {
             if (u.getLogin().equalsIgnoreCase(login) && u.getPass().equals(pass)) {
-                System.out.println("✅ Usuario autenticado: " + login);
+                System.out.println("Usuario autenticado: " + login);
                 return true;
             }
         }
-        System.out.println("❌ Credenciales incorrectas para: " + login);
+        System.out.println("Credenciales incorrectas para: " + login);
         return false;
     }
 
